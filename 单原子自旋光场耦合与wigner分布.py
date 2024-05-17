@@ -71,6 +71,8 @@ for idx, psi in enumerate(psi_sublist):
     )
     ax.set_title(r"$g = %.1f$" % (g_vec[g_idx][idx] / (2 * np.pi)),
                  fontsize=16)
+    ax.set_xlabel(r"$Re( \alpha )$")
+    ax.set_ylabel(r"$Im(\alpha)$");
 
 # plot the cavity occupation probability in the ground state
 ax = plt.subplot2grid(fig_grid, (1, 1), colspan=(fig_grid[1] - 2))
